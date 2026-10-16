@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So sánh DevOps vs Truyền thống</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 16px;
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 { color: #667eea; text-align: center; margin-bottom: 8px; }
+        .sub { color: #764ba2; text-align: center; margin-bottom: 24px; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px 14px; border: 1px solid #e2e8f0; text-align: left; vertical-align: top; }
+        th { background: #667eea; color: white; }
+        th.devops { background: #38a169; }
+        tr:nth-child(even) td { background: #f8f9fa; }
+        td:first-child { font-weight: bold; }
+        .back { display: block; text-align: center; margin-top: 20px; color: #667eea; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>So sánh DevOps vs Truyền thống</h1>
+        <p class="sub">Lab 1 — Trải nghiệm CI/CD Pipeline</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th>Cách THỦ CÔNG (Traditional)</th>
+                        <th class="devops">Cách DEVOPS (CI/CD Pipeline)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Làm sao để deploy?</td>
+                        <td>Tự sao chép file lên máy chủ (FTP hoặc copy tay), cấu hình
